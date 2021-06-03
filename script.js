@@ -62,29 +62,76 @@ let x = 1 + (a *= 2);
 
 
 
-Замените код Function Expression стрелочной функцией:
+// Замените код Function Expression стрелочной функцией:
 
 
-function ask(question, yes, no) {
-    if (confirm(question)) yes()
-    else no();
-  }
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
   
-  ask(
-    "Вы согласны?",
-    function() { alert("Вы согласились."); },
-    function() { alert("Вы отменили выполнение."); }
-  );
+//   ask(
+//     "Вы согласны?",
+//     function() { alert("Вы согласились."); },
+//     function() { alert("Вы отменили выполнение."); }
+//   );
 
 
 
-  function ask(question, yes, no) {
-    if (confirm(question)) yes()
-    else no();
-  }
+//   function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
   
-  ask(
-    "Вы согласны?",
-    () => alert("Вы согласились."),
-    () => alert("Вы отменили выполнение.")
-  );
+//   ask(
+//     "Вы согласны?",
+//     () => alert("Вы согласились."),
+//     () => alert("Вы отменили выполнение.")
+//   );
+
+
+
+
+
+
+// Напишите код, выполнив задание из каждого пункта отдельной строкой:
+
+// Создайте пустой объект user.
+// Добавьте свойство name со значением John.
+// Добавьте свойство surname со значением Smith.
+// Измените значение свойства name на Pete.
+// Удалите свойство name из объекта.
+
+// let user = {};
+// user.name = "John";
+// user.surname = "Smith";
+// user.name = "Pete";
+// delete user.name;
+
+
+
+
+// У нас есть объект, в котором хранятся зарплаты нашей команды:
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130
+// }
+// Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
+
+// Если объект salaries пуст, то результат должен быть 0.
+
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130
+// }
+
+// let sum = 0;
+// for (let key in salaries) {
+//   sum += salaries[key];
+// }
+
+// alert (sum);
